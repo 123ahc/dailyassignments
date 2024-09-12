@@ -1,87 +1,31 @@
-//--------------------------------------
-// Click the file icon on the left and 
-// go to the instructions first thing
-//--------------------------------------
+// 1) I need a fence around my yard now. Help me find the perimeter.
+// Perimeter is width + with + length + length
 
-let myPerson = {
-  firstname: "Jarreth",
-  lastname: "Vazquez",
-  age: 14,
-  favfood: "pizza"
-};
+let yardWidth = 100;
+let yardLength = 15;
 
+let yardPerimeter = yardWidth + yardWidth + yardLength + yardLength;
 
+console.log(yardPerimeter)
 
-// ex.) Example problem
-// 
-// Below create a variable sum1 with the value 2 and a variable sum2 with the value 5.
-// Add these two variables together and assign the value to a variable sum3
+// 2) With the yardPerimeter variable go ahead and use back ticks (``)
+// with string interpolation (${}) to put the following message
+// in the messagePerimeter variable -->
+// 'You are going to need (insert perimeter here)ft of fence'.
+// Don't remember how to do this? Go back to the first repl.it assignment from today
+// and look at the example problems console.log().
 
-let sum1 = 2;
-let sum2 = 5;
-let sum3 = sum1 + sum2;
-//not getting the 7 in sum3? Console it out!
-console.log(`sum3 is ${sum3}`);
+let messagePerimeter = `You are goingn to need ${yardPerimeter}ft of fence`;
 
+console.log(messagePerimeter)
 
-// 1) Demonstrate the 3 different types of variables that can be used.
-// Hint: One of them is let name = 2;
-// Make the name of the let variable aLet with any value
-// Make the name of the const variable aConst with any value
-// Make the name of the var variable aVar with any value
+// 3)One last thing. It is going to cost me $15 per foot of fence.
+// What is the total price I am going to have to pay?
+// Use the yardPerimeter variable and the pricePerFoot variable
+// to find the total price and put that value in the totalPrice variable.
 
-let aLet = 2;
-const aConst = 4;
-var aVar = 6;
+let pricePerFoot = 15;
 
-console.log(aLet,aConst,aVar)
+let totalPrice = yardPerimeter * pricePerFoot;
 
-// Types
-// 2) Assign the variable below aString to any string
-// When someone says to assign they mean to put a value after the equals sign.
-
-let aString = "string";
-
-console.log(aString)
-
-// 3) Assign the variable below aNumber to any number
-
-let aNumber = 83;
-
-console.log(aNumber)
-
-// 4) Assign the variable below aBool to any boolean value
-
-let aBool = true;
-
-console.log(aBool)
-
-// Operations
-// 5) Add two numbers together. Assign firstNumber 5 and secondNumber 30.
-// Add those two variables together and assign it to addedNumbers
-
-let firstNumber = 5;
-let secondNumber = 30;
-
-let addedNumbers = firstNumber + secondNumber;
-
-console.log(addedNumbers)
-
-//6) Add two strings together. Assign firstString 'Hello ' and secondString 'World'
-// Add those two variables together and assign it to addedStrings
-
-let firstString = "Hello ";
-let secondString = "World";
-
-let addedStrings = firstString + secondString;
-
-console.log(addedStrings)
-
-//7) Below is a variable that is set to true. Flip it to false using the not operator and assign
-// it to lieDetector
-
-let iHaveMillions = true;
-
-let lieDetector = !iHaveMillions;
-
-console.log(likDetector)
+console.log(totalPrice)
