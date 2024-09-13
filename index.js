@@ -1,31 +1,127 @@
-// 1) I need a fence around my yard now. Help me find the perimeter.
-// Perimeter is width + with + length + length
+//------------------------
+// Problem 1
+//------------------------
 
-let yardWidth = 100;
-let yardLength = 15;
+let x = 30;
+let y = 20;
+let z = true;
 
-let yardPerimeter = yardWidth + yardWidth + yardLength + yardLength;
+if(x > y) {
+  z = true;
+} else {
+  z = false;
+}
 
-console.log(yardPerimeter)
+//------------------------
+// Problem 2
+//------------------------
 
-// 2) With the yardPerimeter variable go ahead and use back ticks (``)
-// with string interpolation (${}) to put the following message
-// in the messagePerimeter variable -->
-// 'You are going to need (insert perimeter here)ft of fence'.
-// Don't remember how to do this? Go back to the first repl.it assignment from today
-// and look at the example problems console.log().
+let a = "10% off!";
+let b = "Love it!";
+let c = true;
 
-let messagePerimeter = `You are goingn to need ${yardPerimeter}ft of fence`;
+if(a !== b) {
+  c = true;
+} else {
+  c = false;
+}
 
-console.log(messagePerimeter)
+//------------------------
+// Problem 3
+//------------------------
 
-// 3)One last thing. It is going to cost me $15 per foot of fence.
-// What is the total price I am going to have to pay?
-// Use the yardPerimeter variable and the pricePerFoot variable
-// to find the total price and put that value in the totalPrice variable.
+let d = 5;
+let e = 5;
+let f = true;
 
-let pricePerFoot = 15;
+if(d !== e) {
+  f = false;
+} else {
+  f = true;
+}
 
-let totalPrice = yardPerimeter * pricePerFoot;
+//------------------------
+// Problem 4
+//------------------------
 
-console.log(totalPrice)
+let g = 0;
+let h = 50;
+let i = 20;
+let j = true;
+
+if(g <= i) {
+  if(i <= h) {
+    j = true;
+  } else {
+    j = false;
+  }
+} else {
+  j = false;
+}
+
+//------------------------
+// Problem 5
+//------------------------
+
+let k = 1000;
+let l = -12;
+let m = "-12";
+let n = true;
+
+if(k < l) {
+  n = false;
+}
+else if(l >= k) {
+  n = false;
+}
+else if(l !== m) {
+  n = false;
+} else {
+  n = true;
+}
+
+//------------------------
+// Problem 6
+//------------------------
+
+let o = 20;
+let p = 20;
+let q = true;
+
+if(o === p) {
+  q = true;
+} else {
+  q = false;
+}
+
+//------------------------
+// Problem 7
+//------------------------
+
+let r = 12 < 2 ? true : false;
+
+console.log (false)
+
+//------------------------
+// Problem 8
+//------------------------
+
+let s = "Hello!" === "Hello!" ? false : true;
+
+console.log (true)
+
+//------------------------
+// Problem 9
+//------------------------
+
+let t = 50 == "50" ? false : true;
+
+console.log (false)
+
+//------------------------
+// Problem 10
+//------------------------
+
+let u = 5 !== 5 ? true : false;
+
+console.log (false)
