@@ -1,3 +1,7 @@
 .example {
   font-family: 'Raleway', sans-serif;
 }
+
+.myFont {
+  font-family: 'Bokor', 'Times New Roman';
+}
