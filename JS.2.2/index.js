@@ -45,13 +45,17 @@ example("yellow");
 let redIsFavorite = false;
 function problem1(color) {
   //write code here
-  
-  
+  if (color === "red") {
+    redIsFavorite = true;
+  } else {
+    redIsFavorite = false;
+  };
   
   console.log(`Red is favorite: ${redIsFavorite}`);
 }
 
-
+problem1("red");
+problem1("green");
 
 //--------------------
 // Problem 2
@@ -66,12 +70,20 @@ function problem1(color) {
 let typeNumber = false;
 function problem2(someNumber) {
   //write code here
-
-  
+  if (someNumber > 0) {
+    typeNumber = "positive";
+  } else if (someNumber == 0) {
+    typeNumber = "zero";
+  } else {
+    typeNumber = "negative";
+  }
   
   console.log(`bigNumber: ${typeNumber}`);
 }
 
+problem2(6);
+problem2(0);
+problem2(-4);
 
 //--------------------
 // Problem 3
@@ -83,10 +95,29 @@ function problem2(someNumber) {
 // '100%', '80%', '70%', '60%', '0%'.
 
 
-let percentGrade;
+let percentGrade = false;
 function problem3(grade) {
   //write code here
-  
-  
-  
+  if (grade == "a") {
+    percentGrade = "100%";
+  } else if (grade == "b") {
+    percentGrade = "80%";
+  } else if (grade == "c") {
+    percentGrade = "70%";
+  } else if (grade == "d") {
+    percentGrade = "60%";
+  } else if (grade == "f") {
+    percentGrade = "0%";
+  } else {
+    percentGrade = "That's not a valid grade.  Please try again."
+  }
+
+  console.log(`${percentGrade}`);
 }
+
+problem3("a");
+problem3("b");
+problem3("c");
+problem3("d");
+problem3("f");
+problem3(6);
