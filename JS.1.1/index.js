@@ -30,46 +30,60 @@ console.log(`sum3 is ${sum3}`);
 // Make the name of the const variable aConst with any value
 // Make the name of the var variable aVar with any value
 
+let aLet = 7;
+const aConst = 2;
+var aVar = 9;
 
+console.log(aLet, aConst, aVar);
 
 // Types
 // 2) Assign the variable below aString to any string
 // When someone says to assign they mean to put a value after the equals sign.
 
-let aString;
+let aString = "This is a string.";
 
+console.log(aString);
 
 // 3) Assign the variable below aNumber to any number
 
-let aNumber;
+let aNumber = 11.5;
+
+console.log(aNumber);
 
 
 // 4) Assign the variable below aBool to any boolean value
 
-let aBool;
+let aBool = false;
 
+console.log(aBool);
 
 // Operations
 // 5) Add two numbers together. Assign firstNumber 5 and secondNumber 30.
 // Add those two variables together and assign it to addedNumbers
 
-let firstNumber;
-let secondNumber;
+let firstNumber = 5;
+let secondNumber = 30;
 
-let addedNumbers;
+let addedNumbers = firstNumber + secondNumber;
+
+console.log(addedNumbers);
 
 
 //6) Add two strings together. Assign firstString 'Hello ' and secondString 'World'
 // Add those two variables together and assign it to addedStrings
 
-let firstString;
-let secondString;
+let firstString = "This is another";
+let secondString = "string.";
 
-let addedStrings;
+let addedStrings = firstString + " " + secondString;
+
+console.log(addedStrings);
 
 //7) Below is a variable that is set to true. Flip it to false using the not operator and assign
 // it to lieDetector
 
 let iHaveMillions = true;
 
-let lieDetector;
+let lieDetector = !iHaveMillions;
+
+console.log(lieDetector);
