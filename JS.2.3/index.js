@@ -11,10 +11,14 @@
 let favGreenOrYellow = false;
 function problem1(color) {
   //write code here
-  if(color == "green" || color == "yellow") favGreenOrYellow = true;
+  if(color === "green" || color ==- "yellow") favGreenOrYellow = true;
   
-  
+  console.log(favGreenOrYellow); 
 }
+
+
+problem1("green");
+problem1("black");
 
 //-----------------
 // Problem 2
@@ -32,8 +36,12 @@ function problem2(guess) {
   //write code here
   if(guess > 0 && guess <= 100) validInput = true;
   
+  console.log(validInput);
 }
 
+problem2(50);
+problem2(-4);
+problem2(105);
 
 //-----------------
 // Problem 3
@@ -51,4 +59,8 @@ function problem3(color) {
   if(color == "yellow" || color == "#ffff00" || color == "green" || color == "#00ff00"){
     favGreenOrYellowWithHex = true;
   }
+
+  console.log(favGreenOrYellowWithHex);
 }
+
+problem3("yellow");
