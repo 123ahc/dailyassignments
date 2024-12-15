@@ -26,13 +26,22 @@ a, h1, h2, h3, div, body, html {
 }
 
 /**************************/
-/******* Practice 1 *******/
+/******* Practice1 *******/
 /**************************/
 
 #practice1 {
-  margin: 40px 0;
+  margin: 50px 0;
+  background-color: green;
+  padding: 100px;
+  text-align: center;
+
 }
 
+#pages a {
+  color: white;
+  font-size: 50px;
+  padding: 10px;
+}
 
 /**************************/
 /******** Example2 ********/
@@ -52,6 +61,25 @@ a, h1, h2, h3, div, body, html {
   
 }
 
+/**************************/
+/******** Practice2 ********/
+/**************************/
+
+#practice2 {
+  margin: 0 auto;
+  width: 400px;
+}
+
+
+.here {
+  background-color: rgb(255, 35, 35);
+  float: left;
+  padding: 47px;
+  margin: 5px 10px;
+  
+  
+  
+}
 
 /**************************/
 /******** Example3 ********/
@@ -75,4 +103,16 @@ a, h1, h2, h3, div, body, html {
   margin: 0;
   font-size: 50px;
   
+}
+
+/**************************/
+/******* Practice3 *******/
+/**************************/
+
+#text {
+  background-color: purple;
+  color: white;
+  padding: 50px 0 50px 100px;
+  text-align: left;
+  font-size: 40px;
 }
