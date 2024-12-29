@@ -30,11 +30,17 @@ let shoppingCart = [
     }
   ];
 
-function totalPrice() {
+let total = 0;
+function totalPrice(item, index, arr) {
   //write code here
-  
-  
+  let price = arr[index].price;
+  if (arr[index].inStock) {
+    total += price;
+  }
 }
+
+shoppingCart.forEach(totalPrice);
+console.log(total);
 
 
 // Problem 2
@@ -86,9 +92,16 @@ const shopItems = [
     },
   ];
 
-function inStockItems() {
+let availableArray = [];
+function inStockItems(item, index, arr) {
   //write code here
-  
+  //let availableArray = [];
+  let inStock = arr[index].inStock;
+  if (inStock) {
+    availableArray.push(arr[index].itemName);
+  }
   //return the array of in stock items
   
 }
+shopItems.forEach(inStockItems);
+console.log(availableArray);
